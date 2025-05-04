@@ -32,7 +32,7 @@ The recommendation system uses a combination of skills-based filtering and metad
 - **notebooks**: Contains Jupyter notebooks for exploring and developing the recommendation models.
   
 ## Live Demo
-You can try the LMS Recommendation System live at [https://student-partner.onrender.com/](https://student-partner.onrender.com/).
+You can try the LMS Recommendation System live at [https://lms-251s.onrender.com](https://lms-251s.onrender.com).
 
 ## Requirements
 To run the project locally, make sure you have the following dependencies installed:
