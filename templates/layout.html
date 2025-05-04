@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LMS Portal{% endblock %}</title>
+    
+    <link rel="icon" href="{{ url_for('static', filename='fav.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='esp_logo.png') }}" alt="ESP Logo" style="height: 50px;">
+        </div>
+        <nav class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <div class="nav-item">
+                <a href="#services">Services</a>
+                <div class="dropdown">
+                    <a href="{{ url_for('digital_footprints') }}">Digital footprint</a>
+                    <a href="{{ url_for('course_recommendation') }}">Coursera Course Recommendation</a>
+                    <a href="{{ url_for('udemy_recommendation') }}">Udemy Course Recommendation</a>
+                    <a href="{{ url_for('roadmaps') }}">Roadmaps</a>
+                    <a href="{{ url_for('communication_skills') }}">Comm. skills</a>
+                    
+                </div>
+            </div>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

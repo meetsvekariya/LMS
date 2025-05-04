@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - LMS Portal{% endblock %}
+
+{% block content %}
+<section class="hero" style="width: 100vw; max-width: 100%; padding: 50px 0; text-align: center;">
+    <div class="content">
+        <h1>Building the Future!</h1>
+        <h2 style="font-size: 3rem;">Skills.<br>Progress.<br>Success.</h2>
+        <p>Hey engineers! Feeling overwhelmed by too much information? Wondering how to turn it into a successful career?  
+        Our Student Partner LMS is designed to guide you through skill-based learning, personalized course recommendations, and hands-on skill-building.  
+        Gain hands-on experience, refine your expertise, and confidently transition from classroom to career.  
+        Let’s make your engineering dreams a reality!</p>
+        <a href="{{ url_for('digital_footprints') }}" class="btn">Get Started</a>
+    </div>
+</section>
+
+<style>
+    body {
+        background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+        background-size: cover; /* Ensure the background image covers the whole page */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Make the background fixed when scrolling */
+    }
+</style>
+{% endblock %}
